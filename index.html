@@ -1,1 +1,31 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub page as PWA template</title>
+  <link rel="canonical" href="https://miguelsierrac.github.io/coral-swimmer-pwa/" />
+  <link rel="manifest" href="/coral-swimmer-pwa/manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ 
+  <h1>GitHub page as PWA template</h1>
+  <p>
+    This is a PWA template for GitHub pages. 
+    Make sure to check the README at 
+    <a href="https://github.com/miguelsierrac/coral-swimmer-pwa/">https://github.com/miguelsierrac/coral-swimmer-pwa/</a> and 
+    to change the necessary settings to your needs.
+  </p>
+
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/coral-swimmer-pwa/sw.js',
+          {scope: '/coral-swimmer-pwa/'}
+        )
+      }
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>

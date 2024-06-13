@@ -1,0 +1,17 @@
+{
+  "name": "Coral Swimmer PWA",
+  "short_name": "CSPWA",
+  "description": "Github Page as a Progressive Web App",
+  "scope": "/coral-swimmer-pwa/",
+  "start_url": "/coral-swimmer-pwa/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src": "/coral-swimmer-pwa/img/icon.png",
+        "type": "image/png",
+        "sizes": "700x700"
+      }
+  ]
+}
