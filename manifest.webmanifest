@@ -9,8 +9,8 @@
   "display": "standalone", 
   "icons": [
       {
-        "src": "/coral-swimmer-pwa/img/icon.png",
-        "type": "image/png",
+        "src": "/coral-swimmer-pwa/img/icon.jpg",
+        "type": "image/jpg",
         "sizes": "700x700"
       }
   ]

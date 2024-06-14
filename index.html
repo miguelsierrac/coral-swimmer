@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub page as PWA template</title>
-  <link rel="canonical" href="https://miguelsierrac.github.io/coral-swimmer-pwa/" />
-  <link rel="manifest" href="/coral-swimmer-pwa/manifest.webmanifest">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
- 
-  <h1>GitHub page as PWA template</h1>
-  <p>
-    This is a PWA template for GitHub pages. 
-    Make sure to check the README at 
-    <a href="https://github.com/miguelsierrac/coral-swimmer-pwa/">https://github.com/miguelsierrac/coral-swimmer-pwa/</a> and 
-    to change the necessary settings to your needs.
-  </p>
 
-  <script>
-      if (navigator.serviceWorker) {
-        navigator.serviceWorker.register (
-          '/coral-swimmer-pwa/sw.js',
-          {scope: '/coral-swimmer-pwa/'}
-        )
-      }
-  </script>
-  <script src="js/app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carnet Membresía Coral Swimmer</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="canonical" href="https://miguelsierrac.github.io/coral-swimmer-pwa/" />
+    <link rel="manifest" href="/coral-swimmer-pwa/manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fcfaf8] justify-between group/design-root overflow-x-hidden"
+        style='font-family: Lexend, "Noto Sans", sans-serif;'>
+        <div>
+            <div class="flex items-center bg-[#fcfaf8] p-4 pb-2 justify-between">
+                <h2
+                    class="text-[#1c150d] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12 pr-12">
+                    Carnet Deportista</h2>
+            </div>
+            <div class="flex p-4 @container">
+                <div class="flex w-full flex-col gap-4 items-center">
+                    <div class="flex gap-4 flex-col items-center">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl min-h-32 w-32"
+                            style='background-image: url("img/icon.jpg");'>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p
+                                class="text-[#1c150d] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+                                CLUB CORAL SWIMMER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex p-4 @container">
+                <div class="flex w-full flex-col gap-4 items-start">
+                    <div class="flex gap-4 flex-col items-start">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                            style='background-image: url("https://cdn.usegalileo.ai/stability/c820f3c9-50a4-448d-82bb-10957b49b708.png");'>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <p class="text-[#1c150d] text-[22px] font-bold leading-tight tracking-[-0.015em]">Isabelle
+                                Smith</p>
+                            <p class="text-[#9c7849] text-base font-normal leading-normal">ID: 38940</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#fcfaf8] px-4 min-h-[72px] py-2">
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#1c150d] text-base font-medium leading-normal line-clamp-1">Fecha de Ingreso</p>
+                    <p class="text-[#9c7849] text-sm font-normal leading-normal line-clamp-2">Enero 12, 2022</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#fcfaf8] px-4 min-h-[72px] py-2">
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#1c150d] text-base font-medium leading-normal line-clamp-1">Número de Clases</p>
+                    <p class="text-[#9c7849] text-sm font-normal leading-normal line-clamp-2">12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register(
+                '/coral-swimmer-pwa/sw.js',
+                { scope: '/coral-swimmer-pwa/' }
+            )
+        }
+    </script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
